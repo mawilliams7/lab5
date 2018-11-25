@@ -16,7 +16,7 @@ from Heap import Heap
 def main():
   heap = Heap()
   array = list()
-  size = 500
+  size = 100
   for i in range(size):
     array.append(random.randint(0, size))
   print("Array before heapsort:")
@@ -30,7 +30,7 @@ def main():
   
   sorted_array = list()
   while len(heap.heap_array) > 0:
-    sorted_array.append(heap.retrieve())
+    sorted_array.append(heap.extract_min())
   print("Sorted array:")
   print(sorted_array)
 

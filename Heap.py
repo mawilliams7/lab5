@@ -41,7 +41,7 @@ class Heap:
       last = parent
 
 
-  def retrieve(self):
+  def extract_min(self):
     """
     Retrieves the first element of a heap for the user
     
@@ -91,6 +91,17 @@ class Heap:
         break
       self.heap_array[swap] = temp
       last = swap
-      
-          
+
+
+  def is_empty(self):
+    """
+    Checks if the heap is empty.
+    
+    Args:
+    
+    Returns:
+      The size of the heap as a boolean.
+
+    """
+    return len(self.heap_array)==0
 
